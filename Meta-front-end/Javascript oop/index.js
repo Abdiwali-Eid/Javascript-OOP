@@ -60,3 +60,17 @@ pening1.canfly=false;
 console.log("pengin1", pening1)
 console.log("peing1  has can fly", eagle1.canfly)
 console.log("peing1  has can feathers", eagle1.hasfeathers)
+
+//DOM
+const story = document.body.querySelector(".story");
+
+const setText = document.body.querySelector("#set-text");
+setText.addEventListener("click", () => {
+  story.textContent = "It was a dark and stormy night...";
+});
+
+const clearText = document.body.querySelector("#clear-text");
+clearText.addEventListener("click", () => {
+  story.textContent = "";
+});
+
